@@ -1,0 +1,88 @@
+{
+    "stateNameSchema": "{schema, select, APPROVED{Approved} PENDING{Pending} REJECTED{Rejected} other{Other}}",
+
+
+    "homePageTitle": "Welcome to Clean Flutter Template",
+    "homePageSubtitle": "Explore the features of the template:",
+
+    "createPageTitle": "Create a new user",
+    "registerTitle": "Register",
+
+    "fieldName": "Name",
+    "fieldEmail": "Email",
+    "fieldId": "ID",
+    "fieldHintName": "Gabriel de Godoy Braz",
+    "fieldHintEmail": "example@example.com",
+    "fieldHintId": "Identification number",
+
+    "fieldRequired": "Field is required",
+    "fieldMinLength": "Field must be at least 6 characters long",
+    "fieldInvalidEmail": "Field must be a valid email address",
+    "fieldInvalidId": "Field must be a valid integer",
+
+    "successCreateUser": "User {successCreateUser} created successfully",
+    "@successCreateUser" : {
+        "placeholders": {
+            "placeholders": {
+                "successCreateUser": {}
+            }
+        }
+    },
+
+    "getPageTitle": "Search for a user",
+    "searchTitle": "Search",
+
+    "updatePageTitle": "Update an user",
+    "updateTitle": "Update",
+
+    "deletePageTitle": "Delete an user",
+    "deleteTitle": "Delete",
+
+
+    "successUpdateUser": "User {successUpdateUser} updated successfully",
+    "@successUpdateUser" : {
+        "placeholders": {
+            "placeholders": {
+                "successUpdateUser": {}
+            }
+        }
+    },
+
+    "successDeleteUser": "User {successDeleteUser} deleted successfully",
+    "@successDeleteUser" : {
+        "placeholders": {
+            "placeholders": {
+                "successDeleteUser": {}
+            }
+        }
+    },
+
+    "entityErrorMessage": "Field {entityErrorMessage} is not valid",
+    "@entityErrorMessage" : {
+        "placeholders": {
+            "placeholders": {
+                "entityErrorMessage": {}
+            }
+        }
+    },
+    
+    "emptyListErrorMessage": "List is empty, no items found for this request",
+
+    "requestErrorMessage": "{message}",
+    "@requestErrorMessage" : {
+        "placeholders": {
+            "placeholders": {
+                "requestErrorMessage": {}
+            }
+        }
+    },
+
+    "noItemsFoundErrorMessage": "No items found for {message}",
+    "@noItemsFoundErrorMessage" : {
+        "placeholders": {
+            "placeholders": {
+                "noItemsFoundErrorMessage": {}
+            }
+        }
+    }
+}

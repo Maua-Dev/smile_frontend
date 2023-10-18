@@ -1,0 +1,50 @@
+name: Flutter CI TEST
+
+on:
+  pull_request:
+jobs:
+  flutter_test:
+    name: Run flutter test
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout code
+        uses: actions/checkout@v2
+
+      - name: Setup Java Version
+        uses: actions/setup-java@v1
+        with:
+          java-version: "12.x"
+
+      - uses: subosito/flutter-action@v1
+        with:
+          flutter-version: '3.3.10'
+          channel: "stable"
+
+      - name: Get flutter dependencies
+        run: flutter pub get
+
+      # Report:
+      - name: Install lcov
+        run: sudo apt-get install lcov
+
+      - name: Flutter Test
+        run: flutter test --coverage
+
+      - name: Create report
+        run: genhtml coverage/lcov.info -o coverage/html
+
+      - uses: codecov/codecov-action@v1
+        with:
+          token: ${{ secrets.CODECOV_TOKEN }} # not required for public repos
+          files: coverage/lcov.info
+          flags: unittests # optional
+          directory: coverage/
+          functionalities: html
+          name: codecov-umbrella # optional
+          fail_ci_if_error: true # optional (default = false)
+          verbose: true # optional (default = false)
+
+      - uses: actions/upload-artifact@v2
+        with:
+          name: report
+          path: coverage/html/
