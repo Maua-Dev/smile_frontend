@@ -34,16 +34,14 @@ dev_dependencies:
   mobx_codegen: ^2.4.0
   flutter_test:
     sdk: flutter
-  flutter_lints: ^2.0.0
+  flutter_lints: ^3.0.0
 
 flutter:
   uses-material-design: true
-  assets:
-    - assets/images/logo-dev.png
 
 scripts:
-  build: flutter pub run build_runner build
-  watch: flutter pub run build_runner watch --delete-conflicting-outputs
+  mobx_build: dart run build_runner build
+  mobx_watch: dart run build_runner watch --delete-conflicting-outputs
 
 flutter_intl:
   enabled: true
