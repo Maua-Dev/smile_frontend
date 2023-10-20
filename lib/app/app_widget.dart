@@ -2,13 +2,11 @@ import 'package:flutter/material.dart';
 import 'package:flutter_modular/flutter_modular.dart';
 
 import '../generated/l10n.dart';
-import '../shared/themes/theme_manager.dart';
-import '../shared/themes/themes_constants.dart';
+import 'shared/themes/theme_manager.dart';
+import 'shared/themes/themes_constants.dart';
 import 'package:flutter_localizations/flutter_localizations.dart';
 
 ThemeManager _themeManager = ThemeManager();
-final scaffoldKey = GlobalKey<ScaffoldMessengerState>();
-final ScaffoldMessengerState scaffold = scaffoldKey.currentState!;
 
 class AppWidget extends StatefulWidget {
   const AppWidget({super.key});
@@ -40,7 +38,7 @@ class _AppWidgetState extends State<AppWidget> {
   Widget build(BuildContext context) {
     Modular.setInitialRoute('/');
     return MaterialApp.router(
-      title: 'Flutter Template',
+      title: 'Semana Mauá de Inovação, Liderança e Empreendedorismo',
       localizationsDelegates: const [
         S.delegate,
         GlobalMaterialLocalizations.delegate,

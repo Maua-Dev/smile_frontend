@@ -1,4 +1,4 @@
-package com.example.clean_flutter_template
+package com.br.smile.app
 
 import io.flutter.embedding.android.FlutterActivity
 

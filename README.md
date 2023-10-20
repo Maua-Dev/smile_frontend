@@ -1,6 +1,6 @@
-[![codecov](https://codecov.io/gh/Maua-Dev/clean_flutter_template/branch/dev/graph/badge.svg?token=ZPKZHXHM9X)](https://codecov.io/gh/Maua-Dev/clean_flutter_template)
+[![codecov](https://codecov.io/gh/Maua-Dev/smile_frontend/branch/dev/graph/badge.svg?token=ZPKZHXHM9X)](https://codecov.io/gh/Maua-Dev/smile_frontend)
 
-# clean_flutter_template 🌡🍽
+# smile_frontend 🌡🍽
 
 Template for flutter aplications repositories based in Clean Arch
 

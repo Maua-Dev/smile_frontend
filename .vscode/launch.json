@@ -1,28 +1,19 @@
 {
-    // Use IntelliSense to learn about possible attributes.
-    // Hover to view descriptions of existing attributes.
-    // For more information, visit: https://go.microsoft.com/fwlink/?linkid=830387
     "version": "0.2.0",
     "configurations": [
         {
-            "name": "(dev) template",
+            "name": "(homolog) smile_front",
             "request": "launch",
             "type": "dart",
             "flutterMode": "debug",
             "args": [
+                "--dart-define=MSS_USER_BASE_URL=https://q0ab6v8lyk.execute-api.us-east-2.amazonaws.com/prod/mss-cognito",
+                "--dart-define=MSS_ACTIVITIES_BASE_URL=https://fdj19374fh.execute-api.us-east-2.amazonaws.com/prod/mss-activity",
+                "--dart-define=S3_BASE_URL=https://d3ebnpochj0915.cloudfront.net/",
+                "--dart-define=MSS_CERTIFICATE_BASE_URL=https://lqtdp4le7zlr5bhel4jamjszcy0dhrft.lambda-url.sa-east-1.on.aws/",
                 "--dart-define=ENV=DEV",
-            ]
+            ],
+
         },
-        {
-            "name": "(homolog) template",
-            "request": "launch",
-            "type": "dart",
-            "flutterMode": "debug",
-            "args": [
-                "--dart-define=ENV=HOMOLOG",
-                "--dart-define=MSS_USER_BASE_URL=https://3q0ikd6zx3.execute-api.us-east-2.amazonaws.com/prod/mss-template",
-            ]
-        },
-        
     ]
 }
