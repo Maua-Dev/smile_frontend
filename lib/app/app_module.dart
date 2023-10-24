@@ -7,9 +7,9 @@ class AppModule extends Module {
 
   @override
   void routes(r) {
-    r.child('/',
+    r.child(Modular.initialRoute,
         child: (context) => Container(
-              color: Colors.red,
+              color: Colors.blue,
             ));
   }
 }

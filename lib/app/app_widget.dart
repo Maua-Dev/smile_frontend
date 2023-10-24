@@ -36,7 +36,6 @@ class _AppWidgetState extends State<AppWidget> {
 
   @override
   Widget build(BuildContext context) {
-    Modular.setInitialRoute('/');
     return MaterialApp.router(
       title: 'Semana Mauá de Inovação, Liderança e Empreendedorismo',
       localizationsDelegates: const [
