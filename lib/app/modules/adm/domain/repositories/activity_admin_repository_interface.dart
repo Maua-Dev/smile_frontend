@@ -1,5 +1,5 @@
-import 'package:smile_frontend/app/modules/adm/domain/entities/activity_admin.dart';
+import 'package:smile_frontend/app/modules/adm/infra/models/activity_admin_model.dart';
 
 abstract class ActivityAdminRepositoryInterface {
-  Future<List<ActivityAdmin>> getAllAdminActivities();
+  Future<List<ActivityAdminModel>> getAllAdminActivities();
 }
