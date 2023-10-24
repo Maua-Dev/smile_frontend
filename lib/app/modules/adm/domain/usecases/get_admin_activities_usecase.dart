@@ -1,12 +1,12 @@
 import 'package:smile_frontend/app/modules/adm/domain/entities/activity_admin.dart';
-import 'package:smile_frontend/app/shared/domain/repositories/activities_repository_interface.dart';
+import 'package:smile_frontend/app/modules/adm/domain/repositories/activity_admin_repository_interface.dart';
 
 abstract class GetAdminActivitiesUsecaseInterface {
   Future<List<ActivityAdmin>> call();
 }
 
 class GetAdminActivitiesUsecase implements GetAdminActivitiesUsecaseInterface {
-  final ActivitiesRepositoryInterface repository;
+  final ActivityAdminRepositoryInterface repository;
 
   GetAdminActivitiesUsecase({required this.repository});
 
