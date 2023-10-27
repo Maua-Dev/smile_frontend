@@ -18,4 +18,14 @@ class ActivityAdminRepository implements ActivityAdminRepositoryInterface {
     }
     return listAllAdminActivity;
   }
+
+  @override
+  Future<bool> createActivity(ActivityAdminModel activityToCreate) async {
+    var response = await datasource.createActivity(activityToCreate);
+    if (response != null) {
+      listAllAdminActivity.insert(0, activityToCreate);
+      return true;
+    }
+    return false;
+  }
 }
